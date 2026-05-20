@@ -16,7 +16,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
+  min-height: 100vh;  
 }
 
 /* 5. Improve media defaults and prevent overflow */
@@ -41,4 +41,66 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+}
+:root {
+  --space--between: 45px;
+  --page-padding: clamp(1rem, 5vw, 3rem);
+
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: var(--page-padding);
+  
+}
+.left-side {
+  display: flex;
+  gap: 80px;
+}
+.left-side div {
+  margin-bottom: 10px;
+  font-size: clamp(0.5rem, 2.3vh, 3rem);
+}
+.space {
+  height: 22px;
+}
+.login-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgb(245, 245, 245);
+  min-height: 100vh;
+}
+button {
+  background-color: #596D48;
+  color: white;
+}
+.service {
+  padding: var(--page-padding);
+  padding-top: min(30%, 2rem);
+  font-size: clamp(0.9rem, 1.5vw + 0.5rem, 2rem);
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+
+.create {
+  padding-left: var(--page-padding)
+}
+.create button {
+  margin-bottom: 15px;
+  padding: 8px 60px;
+  border-radius: 8px;
+}
+.log-in {
+  display: flex;
+  gap: 3px;
+  font-size: 1.3rem;
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
+
 }
