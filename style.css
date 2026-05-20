@@ -104,3 +104,12 @@ a {
   text-decoration: none;
 
 }
+.container {
+  display: flex;
+}
+ 
+
+img {
+  width: 100%;
+  min-height: 100vh;
+}
