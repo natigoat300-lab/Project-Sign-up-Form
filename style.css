@@ -109,7 +109,7 @@ a {
 }
 
 .img {
-  min-width: 50%;  
+  min-width: 40%;  
   min-height: 100vh;
   background-size: cover;
   background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
@@ -145,4 +145,11 @@ img {
 .logo-container:last-child {
     font-family: odin-font ,sans-serif,Georgia, 'Times New Roman', Times, serif;
     font-size: 140px;
+}
+
+input[type="password"]:invalid {
+    border: red solid 2px;
+}
+input[type="password"]:valid {
+    border: green 2px solid;
 }
